@@ -18,6 +18,8 @@ public abstract class Person {
     }
 
 
+
+
     public String getName() {
         return name;
     }
@@ -44,5 +46,12 @@ public abstract class Person {
     } 
     
 
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", gender=" + gender ;
+    }
 
 }
