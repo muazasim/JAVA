@@ -7,7 +7,7 @@ public class Main {
     Scanner scanner =new Scanner(System.in);
     // StudentMember(String email, String name, String address, char gender,String choosedPackage , double height, double startingWeight, int studentid , String collegename){
       
-    StudentMember CreateStudentMember(){
+   public  StudentMember CreateStudentMember(){
 
 String email; 
 String name;
@@ -63,6 +63,9 @@ return  student;
 
     {
 
+
+        StudentMember std = new StudentMember();
+        std =StudentMember.CreateStudentMember();
     }
     
 }

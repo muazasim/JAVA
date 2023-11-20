@@ -4,9 +4,9 @@ package Assignment2.models;
 
 public class Analytics {
     public static double calculateBMI(Member member, Assesment assessment) {
-        double heightInMeters = member.getHeight() / 100.0; 
+        double heightinmeters = member.getHeight() / 100.0; 
         double weight = assessment.getWieght();
-        return weight / (heightInMeters * heightInMeters);
+        return weight / (heightinmeters * heightinmeters);
     }
 
     public static String determineBMICategory(double bmiValue) {
@@ -38,6 +38,7 @@ public class Analytics {
         } else {
             idealBodyWeight = 45.5 + 2.3 * (heightInInches - 60);
         }
+
         return assessment.getWieght() <= idealBodyWeight;
     }
     

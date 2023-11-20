@@ -7,21 +7,21 @@ import java.util.List;
 
 public class Assesment {
 
-  private double height ;
-  private double  wieght ;
+  private double hieght ;
+  private double  weight ;
 
-  
+
 public double getHeight() {
-    return height;
+    return hieght;
 }
 public void setHeight(double height) {
-    this.height = height;
+    this.hieght = height;
 }
 public double getWieght() {
-    return wieght;
+    return weight;
 }
 public void setWieght(double wieght) {
-    this.wieght = wieght;
+    this.weight = wieght;
 }
 
 

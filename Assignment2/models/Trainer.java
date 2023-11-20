@@ -5,7 +5,7 @@ public class Trainer extends Person {
     private String speciality ;    
 
     public Trainer(String email, String name, String address, char gender, String speciality){
-        super(String name, String email, String address, char gender); 
+        super( name,  email,  address,  gender); 
         this.speciality =speciality;
     }
 

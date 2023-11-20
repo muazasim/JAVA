@@ -1,6 +1,9 @@
 package Assignment2.models;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.SortedSet;
+import java.util.TreeMap;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -58,27 +61,25 @@ public abstract class Member extends Person {
     }
     
 
-    // public Assesment latestAssessment(ArrayList <Assesment> assessment){
 
-    
-    //     Collections.sort(assessment, Comparator.comparing(Assesment::getDate));
 
-    //     if (assessment.isEmpty()){
-    //         return null;
-    //     }
+     public Assesment latestAssessment() {
 
-    //     else {
+        List<Map.Entry<LocalDate, Assesment>> entryList = new ArrayList<>(assessment.entrySet());
 
-    //         Assesment a = assessment.get(assessment.size()-1);
-    //         return a;
-    //     }
-    // }
+        entryList.sort(Map.Entry.<LocalDate, Assesment>comparingByKey().reversed());
 
-    // public ArrayList <Assesment> sortedAssessmentDates(ArrayList <Assesment> assessment){
+        if (!entryList.isEmpty()) {
+            return entryList.get(0).getValue();
+        } else {
+            return null; 
+        }
+    }
 
-    //      Collections.sort(assessment, Comparator.comparing(Assesment::getDate));
-    //     return assessment;
-    // }
+    public Map<LocalDate, Assesment> getSortedAssessments() {
+       
+        return new TreeMap<>(assessment);
+    }
 
     public HashMap<LocalDate, Assesment> getAssessment() {
         return assessment;
