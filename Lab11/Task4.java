@@ -86,9 +86,15 @@ public class Task4 {
         System.out.println("Stack before removing duplicates  : "+ stack);
         removeDuplicates(stack);
         System.out.println("Stack After removing duplicates  : "+ stack);
+
+
+        stack.remove(99);
+
         
+
 
 
     }
 }
+
  
