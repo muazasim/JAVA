@@ -58,13 +58,10 @@ public class Task6 {
 
            Stack <Integer> stack2 = new Stack<Integer>() ;      
         stack2.push(85);
-        stack2.push(99);
+        stack2.push(85);
         stack2.push(5);
         stack2.push(8);
-
-
-
-        
+ 
         System.out.println(equal(stack1, stack2));
 
 
